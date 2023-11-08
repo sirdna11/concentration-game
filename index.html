@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concentration Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column vh-100">
+
+  <!-- Main Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Concentration Game</a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#game">The Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructions">Instructions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main role="main" class="container my-5 flex-fill">
+    <!-- Home Section -->
+    <section id="home" class="home-content p-4">
+      <h2>Welcome to the Concentration Game!</h2>
+      <p>This is a fun and engaging game to help improve your memory skills. Flip the cards, remember their positions, and match the pairs to win. Ready to challenge your memory?</p>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="game-content p-4">
+      <div id="gameBoard" class="game-board"></div>
+      <button id="resetButton" class="btn btn-primary mt-3">Start new game</button>
+    </section>
+
+    <!-- Instructions Section -->
+    <section id="instructions" class="instructions-content p-4">
+      <h2>How to Play</h2>
+      <p>Start the game by pressing the "Start" button. Click on a card to flip it over. Then, try to find and click another card that matches the first one. If the cards match, they will be removed from the board. If they don't, they will flip back over, and you can try again. The game continues until all pairs have been matched.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-content p-4">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3 bg-light text-center">
+    <div class="container">
+      <span class="text-muted">© 2023 Concentration Game | Version 1.0.0</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+          crossorigin="anonymous"></script>
+</body>
+</html>

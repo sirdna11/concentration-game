@@ -1,0 +1,102 @@
+/* Content sections */
+#home, 
+#instructions, 
+#about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Grid layout for game board */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Card styles for game board */
+#gameBoard .grid .card {
+  width: 100px;
+  height: 150px;
+}
+
+/* Front and back of the cards */
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+/* Front card styles */
+.card .front {
+  background: #9b1a1a;
+}
+
+/* Back card styles */
+.card .back {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+
+/* Selected card styles */
+.card.selected .front {
+  transform: rotateY(-180deg);
+}
+
+.card.selected .back {
+  transform: rotateY(0deg);
+}
+
+/* Matched card styles */
+.card.match .front,
+.card.match .back {
+  visibility: hidden;
+}
+
+/* Reset button styles */
+#resetButton {
+  display: block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 20px auto;
+}
+#pointsDisplay {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .win-message {
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .win-message.active {
+    display: flex; 
+    pointer-events: all; 
+  }
+  
+  
+/* Responsive styles for small screens */
+@media (max-width: 576px) {
+  #gameBoard .grid .card {
+    width: 60px;
+    height: 110px;
+  }
+}
