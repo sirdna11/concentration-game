@@ -10,7 +10,6 @@
   padding: 2rem;
   text-align: center;
 }
-
 /* Grid layout for game board */
 .grid {
   display: grid;
@@ -74,6 +73,7 @@
   font-size: 1rem;
   margin: 20px auto;
 }
+
 #pointsDisplay {
     font-size: 1.5em;
     text-align: center;
